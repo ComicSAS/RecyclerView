@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="indentation_100">100dp</dimen>
+    <dimen name="indentation_16">16dp</dimen>
+    <dimen name="indentation_10">10dp</dimen>
+    <dimen name="indentation_1">1dp</dimen>
+    <dimen name="txt_size_32">32sp</dimen>
+    <dimen name="txt_size_26">26sp</dimen>
+</resources>
