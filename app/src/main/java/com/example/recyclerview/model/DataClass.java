@@ -25,6 +25,5 @@ public class DataClass {
             "https://www.straitstimes.com/sites/default/files/styles/xxx_large/public/articles/2019/07/09/01_bull.jpg?itok=vL4i4V5-&timestamp=1562638155",
             "https://allthatsinteresting.com/thumb/800.422.https://allthatsinteresting.com/wordpress/wp-content/uploads/2013/09/interesting-pictures-of-clouds.jpg",
             "https://www.breakingnews.ie/remote/image.assets.pressassociation.io/v2/image/production/5e7d8d78bee68faaea7463bc796814f8Y29udGVudHNlYXJjaCwxNTcxMjI2MDMw/2.47038087.jpg?crop=0,0,5360,3015&ext=.jpg&width=600&s=bn-957508",
-            "https://drifterplanet.com/wp-content/uploads/2017/12/Cancun-Private-Beach-Party.jpg",
-            "https://www.telegraph.co.uk/content/dam/news/2019/08/29/TELEMMGLPICT000207698608_1_trans_NvBQzQNjv4BqEfOZ1-0wVAQPfVO8s0M8PTt-5vz20WiGvXVBs0N4ZS8.jpeg?imwidth=450"};
+            "https://cms.qz.com/wp-content/uploads/2015/07/rtx19xw5.jpg?quality=75&strip=all&w=410&h=232"};
 }

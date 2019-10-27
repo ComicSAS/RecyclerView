@@ -3,7 +3,6 @@ package com.example.recyclerview;
 import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.recyclerview.adapter.ItemArrayAdapter;
 import com.example.recyclerview.model.DataClass;
 import com.example.recyclerview.model.Item;
+import com.example.recyclerview.pagenation.PaginationListener;
 
 import java.util.ArrayList;
 
@@ -42,26 +42,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initRecyclerView() {
-        ItemArrayAdapter itemArrayAdapter = new ItemArrayAdapter();
+        final ItemArrayAdapter itemArrayAdapter = new ItemArrayAdapter();
         recyclerView = findViewById(R.id.item_list);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        // use a linear layout manager
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(itemArrayAdapter);
         initData();
         itemArrayAdapter.addItems(itemList);
 
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener()
-        {
+        recyclerView.addOnScrollListener(new PaginationListener(layoutManager) {
             @Override
-            public void onScrollStateChanged (@NonNull RecyclerView recyclerView,int newState){
-                super.onScrollStateChanged(recyclerView, newState);
-                //TODO add Log
-            }
-
-            @Override
-            public void onScrolled (@NonNull RecyclerView recyclerView,int dx, int dy){
-                super.onScrolled(recyclerView, dx, dy);
-                //TODO add pagination
+            protected void loadMoreItems() {
+                itemArrayAdapter.addItems(itemList);
             }
         });
     }
