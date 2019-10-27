@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < 25; i++) {
             Uri uri = Uri.parse(images[i]);
             itemList.add(new Item("Name " + i,
-                    "Description " + i + "\n Sample Text"
-                            + "\n Sample Text", uri));
+                    "Description " + i + "\nSample Text"
+                            + "\nSample Text", uri));
         }
     }
 

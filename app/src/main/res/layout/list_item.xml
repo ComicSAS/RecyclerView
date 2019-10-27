@@ -21,6 +21,7 @@
             android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
             android:layout_marginStart="@dimen/indentation_16"
             android:text="@string/name"
             android:textSize="@dimen/txt_size_26" />
@@ -34,9 +35,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/indentation_16"
         android:layout_marginEnd="@dimen/indentation_16"
-        android:gravity="center"
+        android:textColor="@android:color/black"
         android:text="@string/description"
-        android:textSize="@dimen/txt_size_32" />
+        android:textSize="@dimen/txt_size_26" />
 
     <include layout="@layout/divider" />
 
